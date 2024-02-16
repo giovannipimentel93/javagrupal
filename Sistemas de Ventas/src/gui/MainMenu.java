@@ -1,6 +1,5 @@
 package gui;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -60,12 +59,27 @@ public class MainMenu extends JFrame {
         JMenu mnAlmacen = new JMenu("Almacen");
         mnAlmacen.setFont(new Font("Segoe UI", Font.PLAIN, 15));
         menuBar.add(mnAlmacen);
+        
+        JMenuItem SubAlmacen = new JMenuItem("Almacen");
+        SubAlmacen.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                AlmacenFrame almacenFrame = new AlmacenFrame();
+                almacenFrame.setVisible(true);
+            }
+        });
+        mnAlmacen.add(SubAlmacen);
 
         JMenu mnReportes1 = new JMenu("Reportes");
         menuBar.add(mnReportes1);
-
-        JMenu mnReportes2 = new JMenu("Reportes");
-        menuBar.add(mnReportes2);
+        
+        JMenuItem SubReportes = new JMenuItem("Reportes");
+        SubReportes.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                ReportesFrame reportesFrame = new ReportesFrame();
+                reportesFrame.setVisible(true);
+            }
+        });
+        mnReportes1.add(SubReportes);
 
         JMenu mnMantenimiento = new JMenu("Mantenimiento");
         menuBar.add(mnMantenimiento);
