@@ -28,7 +28,7 @@ public class VentasFrame extends JFrame {
      
         setTitle("VentasFrame");
         setSize(595, 579);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
       
         codigoClienteField = new JTextField(10);
