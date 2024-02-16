@@ -16,9 +16,6 @@ public class MantenimientoClienteModificacionFrame extends JFrame {
     private JTextField telefonoTextField;
     private JTextField dniTextField;
 
-    /**
-     * Launch the application.
-     */
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -32,9 +29,6 @@ public class MantenimientoClienteModificacionFrame extends JFrame {
         });
     }
 
-    /**
-     * Create the frame.
-     */
     public MantenimientoClienteModificacionFrame() {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setBounds(100, 100, 449, 326);
@@ -56,13 +50,11 @@ public class MantenimientoClienteModificacionFrame extends JFrame {
         formPanel.add(codigoClienteTextField);
         codigoClienteTextField.setColumns(10);
 
-        // Botón Buscar al lado del campo "Código Cliente"
         JButton btnBuscar = new JButton("Buscar");
         btnBuscar.setBounds(289, 2, 134, 29);
         btnBuscar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Aquí debes agregar la lógica para buscar los datos
                 buscarDatos();
             }
         });
@@ -80,10 +72,6 @@ public class MantenimientoClienteModificacionFrame extends JFrame {
         JLabel lblApellidos = new JLabel("Apellidos:");
         lblApellidos.setBounds(1, 81, 134, 29);
         formPanel.add(lblApellidos);
-
-        JLabel lblDireccion = new JLabel("Dirección:");
-        lblDireccion.setBounds(1, 121, 134, 29);
-        formPanel.add(lblDireccion);
 
         direccionTextField = new JTextField();
         direccionTextField.setBounds(145, 121, 134, 29);
@@ -107,32 +95,26 @@ public class MantenimientoClienteModificacionFrame extends JFrame {
         dniTextField.setBounds(145, 201, 134, 29);
         formPanel.add(dniTextField);
         dniTextField.setColumns(10);
-        
-                apellidosTextField = new JTextField();
-                apellidosTextField.setBounds(145, 81, 134, 29);
-                formPanel.add(apellidosTextField);
-                apellidosTextField.setColumns(10);
 
-        // Botón Modificar
+        apellidosTextField = new JTextField();
+        apellidosTextField.setBounds(145, 81, 134, 29);
+        formPanel.add(apellidosTextField);
+        apellidosTextField.setColumns(10);
+
         JButton btnModificar = new JButton("Modificar");
         btnModificar.setBounds(0, 251, 423, 23);
         formPanel.add(btnModificar);
         btnModificar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Aquí debes agregar la lógica para modificar los datos
                 modificarDatos();
             }
         });
     }
 
     private void buscarDatos() {
-        // Implementa la lógica para buscar los datos según el código del cliente
-        // y cargarlos en los campos correspondientes
     }
 
     private void modificarDatos() {
-        // Implementa la lógica para modificar los datos en la base de datos
-        // Puedes acceder a los valores de los campos con getText() de los JTextField
     }
 }

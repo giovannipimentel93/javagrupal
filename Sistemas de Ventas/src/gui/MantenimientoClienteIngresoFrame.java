@@ -16,9 +16,6 @@ public class MantenimientoClienteIngresoFrame extends JFrame {
     private JTextField telefonoTextField;
     private JTextField dniTextField;
 
-    /**
-     * Launch the application.
-     */
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -32,9 +29,6 @@ public class MantenimientoClienteIngresoFrame extends JFrame {
         });
     }
 
-    /**
-     * Create the frame.
-     */
     public MantenimientoClienteIngresoFrame() {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setBounds(100, 100, 549, 428);
@@ -107,14 +101,11 @@ public class MantenimientoClienteIngresoFrame extends JFrame {
         btnGuardar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Aquí debes agregar la lógica para guardar los datos
                 guardarDatos();
             }
         });
     }
 
     private void guardarDatos() {
-        // Implementa la lógica para guardar los datos en la base de datos o donde sea necesario
-        // Puedes acceder a los valores de los campos con getText() de los JTextField
     }
 }

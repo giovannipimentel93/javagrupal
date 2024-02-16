@@ -89,7 +89,7 @@ public class MantenimientoProductoIngresoFrame extends JFrame {
         btnCrear.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Aquí debes agregar la lógica para crear el producto
+              
                 crearProducto();
             }
         });
@@ -97,7 +97,6 @@ public class MantenimientoProductoIngresoFrame extends JFrame {
     }
 
     private void crearProducto() {
-        // Implementa la lógica para crear el producto en la base de datos
-        // Puedes acceder a los valores de los campos con getText() de los JTextField
+   
     }
 }

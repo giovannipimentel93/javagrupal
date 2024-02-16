@@ -54,7 +54,6 @@ public class MantenimientoClienteConsultaFrame extends JFrame {
         btnBuscar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Lógica para buscar datos
                 buscarDatos();
             }
         });
@@ -111,21 +110,15 @@ public class MantenimientoClienteConsultaFrame extends JFrame {
         btnCerrar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Lógica para modificar datos
                 modificarDatos();
-                // Cierra el JFrame actual
                 dispose();
             }
         });
     }
 
     private void buscarDatos() {
-        // Implementa la lógica para buscar los datos según el código del cliente
-        // y cargarlos en los campos correspondientes
     }
 
     private void modificarDatos() {
-        // Implementa la lógica para modificar los datos en la base de datos
-        // Puedes acceder a los valores de los campos con getText() de los JTextField
     }
 }

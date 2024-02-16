@@ -16,9 +16,6 @@ public class MantenimientoProductoConsultaFrame extends JFrame {
     private JTextField stockMinimoTextField;
     private JTextField stockMaximoTextField;
 
-    /**
-     * Launch the application.
-     */
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -32,9 +29,6 @@ public class MantenimientoProductoConsultaFrame extends JFrame {
         });
     }
 
-    /**
-     * Create the frame.
-     */
     public MantenimientoProductoConsultaFrame() {
         setTitle("Consultar Producto");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -53,13 +47,11 @@ public class MantenimientoProductoConsultaFrame extends JFrame {
         contentPane.add(codigoProductoTextField);
         codigoProductoTextField.setColumns(10);
 
-        // Botón Buscar al lado del campo "Código Producto"
         JButton btnBuscar = new JButton("Buscar");
         btnBuscar.setBounds(439, 8, 89, 23);
         btnBuscar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Aquí debes agregar la lógica para buscar los datos
                 buscarProducto();
             }
         });
@@ -109,14 +101,12 @@ public class MantenimientoProductoConsultaFrame extends JFrame {
         stockMaximoTextField.setBounds(222, 191, 207, 27);
         contentPane.add(stockMaximoTextField);
         stockMaximoTextField.setColumns(10);
-        
+
         JButton btnNewButton = new JButton("Cerrar");
         btnNewButton.setBounds(222, 229, 207, 23);
         contentPane.add(btnNewButton);
     }
 
     private void buscarProducto() {
-        // Implementa la lógica para buscar los datos según el código del producto
-        // y cargarlos en los campos correspondientes
     }
 }

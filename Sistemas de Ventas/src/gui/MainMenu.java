@@ -59,7 +59,7 @@ public class MainMenu extends JFrame {
         JMenu mnAlmacen = new JMenu("Almacen");
         mnAlmacen.setFont(new Font("Segoe UI", Font.PLAIN, 15));
         menuBar.add(mnAlmacen);
-        
+
         JMenuItem SubAlmacen = new JMenuItem("Almacen");
         SubAlmacen.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -71,7 +71,7 @@ public class MainMenu extends JFrame {
 
         JMenu mnReportes1 = new JMenu("Reportes");
         menuBar.add(mnReportes1);
-        
+
         JMenuItem SubReportes = new JMenuItem("Reportes");
         SubReportes.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {

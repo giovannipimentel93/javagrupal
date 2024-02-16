@@ -9,7 +9,6 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -88,36 +87,26 @@ public class AlmacenFrame extends JFrame {
             }
         });
         panel.add(btnIngresar);
-        
+
         textField = new JTextField();
         textField.setBounds(180, 181, 100, 20);
         panel.add(textField);
-        
+
         JLabel lblAgregarstock = new JLabel("AgregarStock:");
         lblAgregarstock.setBounds(20, 181, 150, 20);
         panel.add(lblAgregarstock);
     }
 
     private void buscarProducto() {
-        // Aquí deberías implementar la lógica para buscar el producto según el código.
-        // Puedes llenar los campos de nombre, stock actual, stock mínimo y stock máximo si el producto se encuentra.
-        // En caso contrario, puedes mostrar un mensaje de error.
         JOptionPane.showMessageDialog(this, "Producto no encontrado", "Error", JOptionPane.ERROR_MESSAGE);
     }
 
     private void ingresarStock() {
-        // Aquí deberías implementar la lógica para verificar y actualizar el stock en tu almacén
-        // por ejemplo, puedes tener una clase Almacen con métodos para gestionar el stock.
-
-        // Si el ingreso se realiza correctamente, puedes mostrar un mensaje de éxito.
         JOptionPane.showMessageDialog(this, "Stock ingresado correctamente", "Éxito", JOptionPane.INFORMATION_MESSAGE);
-
-        // Puedes cerrar el JFrame después de ingresar el stock.
         dispose();
     }
 
     public static void main(String[] args) {
-        // Puedes probar el JFrame de la siguiente manera:
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {

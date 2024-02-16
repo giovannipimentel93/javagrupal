@@ -65,25 +65,24 @@ public class ReportesFrame extends JFrame {
     }
 
     private void generarListadoVentas() {
-        // Lógica para obtener y mostrar el listado general de ventas.
-        // Deberías implementar la obtención de los datos y la presentación en algún componente visual.
-        // Puedes utilizar una tabla, por ejemplo.
+     
     }
 
     private void generarListadoStockMinimo() {
-        // Lógica para obtener y mostrar el listado de productos con stock por debajo del mínimo.
+
     }
 
     private void generarListadoUnidadesVendidas() {
-        // Lógica para obtener y mostrar el listado de productos por unidades vendidas acumuladas.
+   
     }
 
     private void generarListadoImporteTotal() {
-        // Lógica para obtener y mostrar el listado de productos por importe total acumulado.
+      
     }
 
     public static void main(String[] args) {
-        // Puedes probar el JFrame de la siguiente manera:
+      
+    	
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 try {

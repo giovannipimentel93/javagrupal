@@ -103,7 +103,7 @@ public class MantenimientoProductoModificacionFrame extends JFrame {
         btnModificar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Aquí debes agregar la lógica para modificar el producto
+               
                 modificarProducto();
             }
         });
@@ -115,7 +115,6 @@ public class MantenimientoProductoModificacionFrame extends JFrame {
     }
 
     private void modificarProducto() {
-        // Implementa la lógica para modificar el producto en la base de datos
-        // Puedes acceder a los valores de los campos con getText() de los JTextField
+      
     }
 }

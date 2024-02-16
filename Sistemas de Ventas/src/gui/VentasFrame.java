@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 
 public class VentasFrame extends JFrame {
 
-    // Variables para almacenar datos de la venta
+  
     private String codigoCliente;
     private String nombresApellidosCliente;
     private String codigoProducto;
@@ -16,7 +16,7 @@ public class VentasFrame extends JFrame {
     private double precioUnitario;
     private double stockActual;
 
-    // Componentes de la interfaz
+
     private JTextField codigoClienteField, nombresApellidosField, codigoProductoField,
             nombreProductoField, cantidadUnidadesField, precioUnitarioField, stockActualField;
     private JButton realizarVentaButton;
@@ -25,12 +25,12 @@ public class VentasFrame extends JFrame {
     private JButton ButtonConsultarCodigo;
 
     public VentasFrame() {
-        // Configuración del JFrame
+     
         setTitle("VentasFrame");
         setSize(595, 579);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        // Inicializar componentes
+      
         codigoClienteField = new JTextField(10);
         codigoClienteField.setBounds(0, 14, 433, 37);
         nombresApellidosField = new JTextField(20);
@@ -48,7 +48,7 @@ public class VentasFrame extends JFrame {
         realizarVentaButton = new JButton("Realizar Venta");
         realizarVentaButton.setBounds(7, 355, 101, 23);
 
-        // Configurar el botón para realizar la venta
+      
         realizarVentaButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -57,7 +57,7 @@ public class VentasFrame extends JFrame {
         });
         getContentPane().setLayout(null);
 
-        // Añadir componentes al JFrame
+       
         JLabel label = new JLabel("Código del Cliente:");
         label.setBounds(8, 0, 90, 14);
         getContentPane().add(label);
@@ -105,14 +105,14 @@ public class VentasFrame extends JFrame {
         getContentPane().add(ButtonConsultarCodigo);
     }
 
-    // Método para realizar la venta
+   
     private void realizarVenta() {
-        // ... (código de venta, como se describe en la respuesta anterior)
+       
     }
 
-    // Método para limpiar los campos después de realizar la venta
+   
     private void limpiarCampos() {
-        // ... (código para limpiar los campos, como se describe en la respuesta anterior)
+       
     }
 
     public static void main(String[] args) {

@@ -16,9 +16,6 @@ public class MantenimientoProductoEliminacionFrame extends JFrame {
     private JTextField stockMinimoTextField;
     private JTextField stockMaximoTextField;
 
-    /**
-     * Launch the application.
-     */
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -32,9 +29,6 @@ public class MantenimientoProductoEliminacionFrame extends JFrame {
         });
     }
 
-    /**
-     * Create the frame.
-     */
     public MantenimientoProductoEliminacionFrame() {
         setTitle("Eliminar Producto");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -53,13 +47,11 @@ public class MantenimientoProductoEliminacionFrame extends JFrame {
         contentPane.add(codigoProductoTextField);
         codigoProductoTextField.setColumns(10);
 
-        // Botón Buscar al lado del campo "Código Producto"
         JButton btnBuscar = new JButton("Buscar");
         btnBuscar.setBounds(439, 8, 89, 23);
         btnBuscar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Aquí debes agregar la lógica para buscar los datos
                 buscarProducto();
             }
         });
@@ -109,26 +101,21 @@ public class MantenimientoProductoEliminacionFrame extends JFrame {
         stockMaximoTextField.setBounds(222, 191, 207, 27);
         contentPane.add(stockMaximoTextField);
         stockMaximoTextField.setColumns(10);
-        
-        JButton btnNewButton = new JButton("Eliminar");
-        btnNewButton.setBounds(222, 229, 207, 23);
-        btnNewButton.addActionListener(new ActionListener() {
+
+        JButton btnEliminar = new JButton("Eliminar");
+        btnEliminar.setBounds(222, 229, 207, 23);
+        btnEliminar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Aquí debes agregar la lógica para eliminar el producto
                 eliminarProducto();
             }
         });
-        contentPane.add(btnNewButton);
+        contentPane.add(btnEliminar);
     }
 
     private void buscarProducto() {
-        // Implementa la lógica para buscar los datos según el código del producto
-        // y cargarlos en los campos correspondientes
     }
 
     private void eliminarProducto() {
-        // Implementa la lógica para eliminar el producto en la base de datos
-        // Puedes acceder a los valores de los campos con getText() de los JTextField
     }
 }
